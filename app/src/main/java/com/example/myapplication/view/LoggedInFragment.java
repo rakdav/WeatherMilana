@@ -78,6 +78,7 @@ public class LoggedInFragment extends Fragment {
                 Navigation.findNavController(getView()).navigate(R.id.action_loggedInFragment_to_ComplectFragment);
             }
         };
+        getGeoLocation();
         getCloses();
         loggedInViewModel.getLoggedOutLiveData().observe(this, new Observer<Boolean>() {
             @Override
